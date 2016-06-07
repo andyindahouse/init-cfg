@@ -1,0 +1,19 @@
+[http]
+	sslVerify = false
+[diff]
+	tool = bc4
+[difftool "bc4"]
+	cmd =  "C:/program\\ files/beyond\\ compare\\ 4/bcomp.exe $LOCAL $REMOTE"
+[merge]
+	tool = bc4
+[mergetool "bc4"]
+	cmd = "C:/Program\\ Files/Beyond\\ Compare\\ 4/Bcomp.exe $LOCAL $REMOTE $BASE $MERGED" 
+	trustExitCode = true
+	keepBackup = false
+[user]
+	name = Anderson Méndez
+	email = anderson.mendez@gft.com
+[webui]
+	autoupdate = true
+[alias]
+	webui = !python /c/Users/anderson.mendez/.git-webui/release/libexec/git-core/git-webui

@@ -1,0 +1,31 @@
+{
+	/** 
+        Archivo de configuración del validador de JS Eslint	                        
+            0 -> Valor para desactivar una regla
+            1 -> Valor para lanzar un warning en caso de que no se cumpla la regla
+            2 -> Valor para lanzar un error en caso de que no se cumpla la regla
+	*/
+    
+    // Todas las reglas recomendadas por Eslint.org (http://eslint.org/docs/rules/)    
+    //"extends":"eslint:recommended",
+    
+	"rules": {
+		//"camelcase": 1,
+		"no-unused-vars": 1,
+		"curly": 1,
+		"quotes": 1
+	},
+	
+	"globals": {
+		"$": true,
+		"angular": true,
+		"app": true,
+		"_": true		
+	},
+		
+	"env": {
+		// Permite uso de variables globales del navegador (window, document, etc)
+		"browser": "true"
+	}
+
+}
